@@ -5,8 +5,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-import com.projects.praticandoAPI.controller.form.UsuarioForm;
-
 @Entity
 public class Usuario {
 	
@@ -24,14 +22,6 @@ public class Usuario {
 		this.nome = nome;
 		this.email = email;
 		this.senha = senha;
-	}
-	
-	public Usuario(UsuarioForm dados) {
-			
-		this.setNome(nome);
-		this.setEmail(email);
-		this.setSenha(senha);
-		
 	}
 
 	@Override
@@ -90,9 +80,5 @@ public class Usuario {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
-
-	
-
-	
 
 }

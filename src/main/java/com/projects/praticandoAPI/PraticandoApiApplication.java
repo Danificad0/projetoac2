@@ -24,7 +24,7 @@ public class PraticandoApiApplication  {
 	String home()
 	{
 		return "Hello World";
-	}
+		}
 	
 	
 }
